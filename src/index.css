@@ -1,0 +1,51 @@
+@import url("./styles/colors.css");
+@import url("./styles/styles.css");
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--body-color);
+  background-color: var(--body-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border: none;
+  color: var(--body-color);
+}
+
+span {
+  cursor: default;
+}
+
+a {
+  color: var(--anchor-color);
+}
+
+svg {
+  padding-bottom: 5px;
+  font-size: 24px;
+}
+
+.disable {
+  color: var(--disable-color);
+}
+
+.temperature {
+  font-size: var(--temperature-font-size);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

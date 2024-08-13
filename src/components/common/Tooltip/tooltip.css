@@ -1,0 +1,7 @@
+.tooltip-content-wrapper {
+  background-color: var(--gray-ternary);
+  padding: 10px 20px;
+  border-radius: var(--container-rd-border);
+  white-space: nowrap;
+  z-index: 9999; /* Ensure it appears above other content */
+}

@@ -1,0 +1,18 @@
+.current-weather-wrapper {
+  background-color: var(--blue-secondary);
+  border-radius: var(--container-rd-border);
+  color: var(--dark-font-color);
+
+  .current-weather-header {
+    border-radius: var(--container-rd-border) var(--container-rd-border) 0px 0px;
+    background-color: var(--blue-ternary);
+  }
+
+  .current-weather-row-header {
+    padding: 12px;
+  }
+
+  .current-weather {
+    padding: 15px 0px 15px;
+  }
+}

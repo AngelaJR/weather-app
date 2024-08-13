@@ -1,0 +1,6 @@
+.overview-item-wrapper {
+  & .overview-item {
+    background-color: var(--dark-secondary);
+    border-radius: var(--container-rd-border);
+  }
+}

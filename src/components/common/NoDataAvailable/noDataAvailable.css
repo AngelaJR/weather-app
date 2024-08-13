@@ -1,0 +1,5 @@
+.no-data-available-wrapper {
+  height: 100%;
+  background-color: var(--secondary-bg-color);
+  border-radius: var(--container-rd-border);
+}
