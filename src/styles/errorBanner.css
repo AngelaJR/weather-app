@@ -1,0 +1,8 @@
+.error-banner-wrapper {
+  padding: 30px 25px 25px;
+  background-color: var(--red-secondary);
+  border-bottom: 6px solid var(--error);
+  border-radius: var(--container-rd-border);
+  color: var(--dark-font-color);
+  text-align: left;
+}

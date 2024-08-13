@@ -1,0 +1,16 @@
+.forecast-wrapper {
+  & .forecast-item-wrapper {
+    height: auto;
+    min-width: 155px;
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--container-rd-border);
+    padding: 5px;
+
+    & .temperature-content {
+      > div:first-child {
+        padding-bottom: 15px;
+        border-bottom: 1.5px solid var(--border-color);
+      }
+    }
+  }
+}

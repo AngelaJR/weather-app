@@ -1,0 +1,41 @@
+:root {
+  /* app colors */
+  --dark-primary: #111015;
+  --dark-secondary: #28282a;
+  --dark-ternary: #1e1e1e;
+
+  --gray-primary: #39393a;
+  --gray-secondary: #2f2f2f;
+  --gray-ternary: #4f4f4f;
+
+  --blue-primary: #6ea8fe;
+  --blue-secondary: #e0f2ff;
+  --blue-ternary: #a0c1da;
+
+  --primary-white: #dee2e6;
+
+  --red-primary: #ad0101;
+  --red-secondary: #e1a5a5;
+
+  /* feature colors */
+  --primary-bg-color: var(--dark-primary);
+  --dark-font-color: var(--dark-primary);
+
+  --secondary-bg-color: var(--dark-secondary);
+  --ternary-bg-color: var(--dark-ternary);
+
+  --popover-bg-color: var(--gray-secondary);
+
+  --border-color: var(--gray-primary);
+  --disable-color: var(--gray-primary);
+
+  --body-bg: var(--primary-bg-color);
+  --body-color: var(--primary-white);
+
+  --anchor-color: var(--blue-primary);
+
+  --error: var(--red-primary);
+
+  --warning: #ffe4c7;
+  --warning-secondary: #f5a812;
+}

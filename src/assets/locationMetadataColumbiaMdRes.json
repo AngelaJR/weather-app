@@ -1,0 +1,88 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "https://api.weather.gov/ontology#",
+      "s": "https://schema.org/",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "unit": "http://codes.wmo.int/common/unit/",
+      "@vocab": "https://api.weather.gov/ontology#",
+      "geometry": {
+        "@id": "s:GeoCoordinates",
+        "@type": "geo:wktLiteral"
+      },
+      "city": "s:addressLocality",
+      "state": "s:addressRegion",
+      "distance": {
+        "@id": "s:Distance",
+        "@type": "s:QuantitativeValue"
+      },
+      "bearing": {
+        "@type": "s:QuantitativeValue"
+      },
+      "value": {
+        "@id": "s:value"
+      },
+      "unitCode": {
+        "@id": "s:unitCode",
+        "@type": "@id"
+      },
+      "forecastOffice": {
+        "@type": "@id"
+      },
+      "forecastGridData": {
+        "@type": "@id"
+      },
+      "publicZone": {
+        "@type": "@id"
+      },
+      "county": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://api.weather.gov/points/39.2156,-76.8582",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-76.858199999999997, 39.215600000000002]
+  },
+  "properties": {
+    "@id": "https://api.weather.gov/points/39.2156,-76.8582",
+    "@type": "wx:Point",
+    "cwa": "LWX",
+    "forecastOffice": "https://api.weather.gov/offices/LWX",
+    "gridId": "LWX",
+    "gridX": 101,
+    "gridY": 86,
+    "forecast": "https://api.weather.gov/gridpoints/LWX/101,86/forecast",
+    "forecastHourly": "https://api.weather.gov/gridpoints/LWX/101,86/forecast/hourly",
+    "forecastGridData": "https://api.weather.gov/gridpoints/LWX/101,86",
+    "observationStations": "https://api.weather.gov/gridpoints/LWX/101,86/stations",
+    "relativeLocation": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.859049999999996, 39.201146000000001]
+      },
+      "properties": {
+        "city": "Columbia",
+        "state": "MD",
+        "distance": {
+          "unitCode": "wmoUnit:m",
+          "value": 1608.8814395500999
+        },
+        "bearing": {
+          "unitCode": "wmoUnit:degree_(angle)",
+          "value": 2
+        }
+      }
+    },
+    "forecastZone": "https://api.weather.gov/zones/forecast/MDZ506",
+    "county": "https://api.weather.gov/zones/county/MDC027",
+    "fireWeatherZone": "https://api.weather.gov/zones/fire/MDZ506",
+    "timeZone": "America/New_York",
+    "radarStation": "KLWX"
+  }
+}
