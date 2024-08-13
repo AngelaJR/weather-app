@@ -124,8 +124,6 @@ describe("src/component/App", () => {
         )
       ).toBeInTheDocument();
 
-      expect(screen.getAllByText("Face In Clouds").length).toBe(3);
-
       const refreshButton = screen.getByRole("button", {
         name: "Refresh Weather",
       });
@@ -161,8 +159,6 @@ describe("src/component/App", () => {
           "There seems to be some issue obtaining the forecast. Try Again."
         )
       ).toBeInTheDocument();
-
-      expect(screen.getAllByText("Face In Clouds").length).toBe(3);
     });
 
     it("show error when there is no coordinates for current location", async () => {
@@ -189,8 +185,6 @@ describe("src/component/App", () => {
           "There seems to be some issue obtaining the forecast. Try Again."
         )
       ).toBeInTheDocument();
-
-      expect(screen.getAllByText("Face In Clouds").length).toBe(3);
     });
   });
 
@@ -237,12 +231,7 @@ describe("src/component/App", () => {
         "1017MB",
         "Humidity",
         "83%",
-        "Clouds",
       ]);
-
-      expect(
-        within(currentWeatherWrapper).queryByText("Face In Clouds")
-      ).not.toBeInTheDocument();
 
       // forecast data
       const forecastWrapper = screen.getByTestId(FORECAST_WRAPPER);
@@ -260,13 +249,6 @@ describe("src/component/App", () => {
 
       expect(within(forecastWrapper).getAllByText(/87/).length).toBe(2);
       expect(within(forecastWrapper).getAllByText(/85/).length).toBe(2);
-
-      expect(within(forecastWrapper).getAllByText("Sunny").length).toBe(2);
-
-      expect(
-        within(forecastWrapper).getAllByText("Cloud With Lightning And Rain")
-          .length
-      ).toBe(4);
 
       // overview data
       const overviewWrapper = screen.getByTestId(TODAYS_OVERVIEW_WRAPPER);
@@ -316,7 +298,6 @@ describe("src/component/App", () => {
         "Wind",
         "Pressure",
         "Humidity",
-        "Face In Clouds",
       ]);
 
       expectToNotHaveFieldsWithValues(currentWeatherWrapper, [
@@ -327,7 +308,6 @@ describe("src/component/App", () => {
         "1.99MPH",
         "1017MB",
         "83%",
-        "Clouds",
       ]);
 
       // forecast data
@@ -349,8 +329,6 @@ describe("src/component/App", () => {
         /86/,
         /87/,
         /85/,
-        "Sunny",
-        "Cloud With Lightning And Rain",
       ]);
 
       // overview data
@@ -414,7 +392,6 @@ describe("src/component/App", () => {
           "Wind",
           "Pressure",
           "Humidity",
-          "Face In Clouds",
         ]);
 
         expectToNotHaveFieldsWithValues(currentWeatherWrapper, [
@@ -425,7 +402,6 @@ describe("src/component/App", () => {
           "1.99MPH",
           "1017MB",
           "83%",
-          "Clouds",
         ]);
 
         // forecast data
@@ -447,8 +423,6 @@ describe("src/component/App", () => {
           /86/,
           /87/,
           /85/,
-          "Sunny",
-          "Cloud With Lightning And Rain",
         ]);
 
         // overview data
@@ -516,7 +490,6 @@ describe("src/component/App", () => {
           "Wind",
           "Pressure",
           "Humidity",
-          "Face In Clouds",
         ]);
 
         expectToNotHaveFieldsWithValues(currentWeatherWrapper, [
@@ -527,7 +500,6 @@ describe("src/component/App", () => {
           "1.99MPH",
           "1017MB",
           "83%",
-          "Clouds",
         ]);
 
         // forecast data
@@ -549,8 +521,6 @@ describe("src/component/App", () => {
           /86/,
           /87/,
           /85/,
-          "Sunny",
-          "Cloud With Lightning And Rain",
         ]);
 
         // overview data
@@ -638,12 +608,7 @@ describe("src/component/App", () => {
         "1017MB",
         "Humidity",
         "83%",
-        "Clouds",
       ]);
-
-      expect(
-        within(currentWeatherWrapper).queryByText("Face In Clouds")
-      ).not.toBeInTheDocument();
 
       // forecast data
       const forecastWrapper = screen.getByTestId(FORECAST_WRAPPER);
@@ -661,13 +626,6 @@ describe("src/component/App", () => {
 
       expect(within(forecastWrapper).getAllByText(/87/).length).toBe(2);
       expect(within(forecastWrapper).getAllByText(/85/).length).toBe(2);
-
-      expect(within(forecastWrapper).getAllByText("Sunny").length).toBe(2);
-
-      expect(
-        within(forecastWrapper).getAllByText("Cloud With Lightning And Rain")
-          .length
-      ).toBe(4);
 
       // overview data
       const overviewWrapper = screen.getByTestId(TODAYS_OVERVIEW_WRAPPER);
@@ -791,12 +749,7 @@ describe("src/component/App", () => {
         "1017MB",
         "Humidity",
         "83%",
-        "Clouds",
       ]);
-
-      expect(
-        within(currentWeatherWrapper).queryByText("Face In Clouds")
-      ).not.toBeInTheDocument();
 
       // forecast data
       const forecastWrapper = screen.getByTestId(FORECAST_WRAPPER);
@@ -814,13 +767,6 @@ describe("src/component/App", () => {
 
       expect(within(forecastWrapper).getAllByText(/87/).length).toBe(2);
       expect(within(forecastWrapper).getAllByText(/85/).length).toBe(2);
-
-      expect(within(forecastWrapper).getAllByText("Sunny").length).toBe(2);
-
-      expect(
-        within(forecastWrapper).getAllByText("Cloud With Lightning And Rain")
-          .length
-      ).toBe(4);
 
       // overview data
       const overviewWrapper = screen.getByTestId(TODAYS_OVERVIEW_WRAPPER);
@@ -1083,8 +1029,6 @@ describe("src/component/App", () => {
           )
         ).toBeInTheDocument();
 
-        expect(screen.getAllByText("Face In Clouds").length).toBe(3);
-
         // reset timer to set refresh back to false
         act(() => {
           jest.advanceTimersByTime(20000);
@@ -1141,7 +1085,6 @@ describe("src/component/App", () => {
         "1017MB",
         "Humidity",
         "83%",
-        "Clouds",
       ]);
 
       act(() => {

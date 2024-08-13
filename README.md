@@ -2,7 +2,7 @@
 
 This React weather app offers real-time weather updates and can fetch current weather conditions based on your location. Users can search for weather information for any location or use the app’s geolocation feature to see weather details for their current position. The app displays key data such as temperature, humidity, and weather description, and includes a forecast for the upcoming days.
 
-![Weather App](images/weather-app-img.png)
+![Weather App](public/images/weather-app-img.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

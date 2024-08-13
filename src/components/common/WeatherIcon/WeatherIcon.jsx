@@ -103,7 +103,7 @@ function hasKeywords(iconInfo, description) {
 function WeatherIcon(props) {
   const { componentId, description, size } = props;
 
-  const { name, imgFileName, sourceUrl } =
+  const { name, imgFileName } =
     FORE_CASE_ICON_MAP.find((iconInfo) => {
       return hasKeywords(iconInfo, description);
     }) || defaultIcon();
@@ -122,7 +122,7 @@ function WeatherIcon(props) {
         alt={name}
         title={description || "No Weather Icon Available"}
       />
-      {sourceUrl && <Icon8CopyrightLink sourceUrl={sourceUrl} name={name} />}
+      {/* leaving it for copyright purposes {sourceUrl && <Icon8CopyrightLink sourceUrl={sourceUrl} name={name} />} */}
     </>
   );
 }
