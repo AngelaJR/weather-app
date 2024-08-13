@@ -38,11 +38,11 @@ function ErrorBanner(props) {
         <p>
           {getErrorMessage(errorInfo)}
           <br />
-          <span>
-            <strong>Information:</strong>{" "}
-            {additionalInfo ||
-              "Tray again by clicking the “Refresh Weather Button” or search for a new location."}
-          </span>
+          {additionalInfo && (
+            <span>
+              <strong>Information:</strong> {additionalInfo}
+            </span>
+          )}
         </p>
       </div>
     );
